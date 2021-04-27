@@ -1,0 +1,439 @@
+@import '~antd/dist/antd.css';
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: TypoRoundBold;
+  src: url(./assets/fonts/Typo_Round_Bold_Demo.otf);
+  unicode-range: U+20-28, U+30-3F, U+41-5A, U+61-7A;
+}
+@font-face {
+  font-family: Multi;
+  src: url(./assets/fonts/MultiDisplay-Regular.otf);
+}
+@font-face {
+  font-family: MyRiadPro;
+  src: url(./assets/fonts/MYRIADPRO-REGULAR.OTF);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+.dashboardGrid {
+  /* position: absolute;
+  top: 10%; */
+  width: 70% !important;
+  margin-left: 15% !important;
+  margin-top: 3% !important;
+  margin-bottom: 3% !important;
+}
+
+.playCard {
+  border-radius: 10px;
+  color: white;
+  background-size: cover;
+  
+}
+
+.cardHeader {
+  width: 100%;
+  text-align: left;
+  border-radius: 10px 10px 0px 0px;
+  font-size: 35px;
+  position: relative;
+}
+
+.cardBody {
+  padding: 7%;
+  text-align: left;
+}
+
+.cardBody > p {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.cardBody > span {
+  font-size: 13px;
+}
+
+.playBtn {
+  width: 50%;
+  height: auto !important;
+  padding: 2%;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 26px;
+  display: block;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+.tableContainer {
+  background-color: transparent !important;
+}
+
+.tableRow {
+  background-image: linear-gradient( to right,#89076b 0%,#5d0287 100% );
+}
+
+.tableButtons {
+  font-family: TypoRoundBold;
+  color: white;
+}
+.tableButtons > p {
+  float: left;
+  font-size: 38px;
+  margin-bottom: 0;
+}
+
+.tableButtons > div {
+  float: right;
+  display: inline-flex;
+}
+
+.allPlayers {
+  color: #aa097e;
+  outline: none;
+  border: 1px solid #d10b91;
+  border-radius: 5px;
+  background: transparent;
+  width: 100%;
+}
+
+.myBets {
+  color: #f9f9f9;
+  outline: none;
+  border: 1px solid #d10b91;
+  border-radius: 5px;
+  background: transparent;
+  width: 100%;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #292e38!important;
+}
+
+.footerContainer {
+  width: 70% !important;
+  margin: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-menu-li{
+  display: block;
+  color: #8898aa;
+  text-align: center;
+  font-size: 14px;
+  font-family: Poppins;  
+}
+
+.footer-menu-li:hover{
+  color: white;
+}
+
+.footerSocial {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 1%;
+  padding-bottom: 3%;
+  margin-top: auto !important;
+}
+
+.footerMain {
+  padding-top: 1%;
+  padding-bottom: 3%;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footerMain > h1 {
+  font-size: 26px;
+  color: #00a79d!important;
+  margin-bottom: 0;
+}
+
+.footerMain > p {
+  font-size: 16px;
+  color: rgba(255,255,255,.5)!important;
+  margin-bottom: 0;
+}
+
+.footerCopyright {
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+
+.footerCopyright > p {
+  font-size: 14px;
+  color: #525f7f;
+  margin-bottom: 0;
+}
+
+.footerCopyright > p > span {
+  color: #00a79d!important;
+}
+
+@media (min-width: 992px) {
+  .text-lg-left {
+      text-align: left!important;
+  }
+}
+
+.header {
+  padding-top: 1%;
+  width: 70%;
+  margin: auto;
+}
+
+/* Navbar */
+
+.bg-light {
+  background-color: transparent !;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: center;
+  margin-left: 7%;
+}
+
+.navbar-light .navbar-toggler {
+  background-image: linear-gradient( to right,#14aafc 0%,#4f52ee 100% );
+  color: white !important;
+}
+
+.form-inline {
+  justify-content: center;
+}
+
+.navbar-nav > a {
+  display: block;
+  color:rgba(255,255,255,.95) !important;
+  text-align: center;
+  padding: 16px;
+  padding-bottom: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 2%;
+}
+
+.nav-link:hover {
+  color: #8898aa !important;
+}
+
+/**/
+.loginBtn {
+  outline: none !important;
+  border-radius: 50px !important;
+  color: #e0e0e0 !important;
+  font-family: Poppins;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  background-image: linear-gradient(87deg,#11cdef 0,#1171ef 100%)!important;
+  width: 150px;
+}
+
+.loginBtn:hover {
+  color: #8898aa !important;
+  background-image: linear-gradient(40deg,#11cdef 0,#1171ef 50%)!important;
+}
+
+.homeDice1 {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+}
+
+.homeDice2 {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+.homeDice3 {
+  position: absolute;
+  top: 20%;
+  right: 3%;
+}
+
+.homeDice4 {
+  position: absolute;
+  top: 45%;
+  right: 5%;
+}
+
+.homeEffect {
+  position: absolute;
+  top: 70%;
+  right: 0;
+}
+
+.headerInitial {
+  width: 70% !important;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.headerInfo {
+  /* position: absolute;
+  top: 10%; */
+
+  width: 70% !important;
+  margin-left: 15% !important;
+  margin-top: 8% !important;
+  margin-bottom: 0% !important;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.cardType {
+  position: absolute;
+  background: #f5365c;
+  left: 0px;
+  text-align: center;
+  border-radius: 0px 5px 5px 0px;
+  bottom: -15px;
+  font-size: 12px;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  font-weight: 700 !important;
+  text-transform: uppercase;
+}
+
+.contactType {
+  position: absolute;
+  background: transparent;
+  right: 0px;
+  text-align: center;
+  border-radius: 5px 0px 0px 5px;
+  bottom: -30px;
+  font-size: 12px;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  font-weight: 700 !important;
+  text-transform: uppercase;
+}
+
+.timeline-tag {
+  background-color: #00a79d;
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.timeline-tag:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-right-color: #00a79d;
+  border-width: 8px;
+  pointer-events: none;
+}
+
+.timeline-block {
+  position: relative;
+  display: block;
+  font-family: "opensans-light";
+  text-align: left;
+  border-left: 2px solid #00a79d;
+  padding-left: 45px;
+  margin-left: 24px;
+  border-left-style: dashed!important;
+  padding-bottom: 2%;
+}
+
+.timeline-step {
+  background-color: #00a79d!important;
+  left: 0rem;
+  position: absolute;
+  z-index: 1;
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  transform: translateX(-50%);
+  text-align: center;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem!important;
+}
+
+.aLink {
+  opacity: 0.8;
+}
+
+.aLink:hover {
+  opacity: 1;
+}
+
+.teamImg:hover{
+  filter: blur(3px);
+}
+
+.cardEase {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
